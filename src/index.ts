@@ -1,5 +1,7 @@
+import {Array} from './Array';
+import {Sorter} from './Sorter';
 
-
-const sorter = new Sorter([17, 5, -10, -2, 8, 4]);
+const array = new Array([9, 18, -5 0, 300]);
+const sorter = new Sorter(array);
 sorter.sort();
-console.log(sorter.collection);
+console.log(array.data);
