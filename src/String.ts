@@ -1,5 +1,9 @@
-export class String {
-  constructor(public data: string) {}
+import { Sorter } from "./Sorter";
+
+export class String extends Sorter {
+  constructor(public data: string) {
+    super()
+  }
 
   compare(index1: number, index2: number): boolean {
     return this.data[index1].toLowerCase() > this.data[index2].toLowerCase();
